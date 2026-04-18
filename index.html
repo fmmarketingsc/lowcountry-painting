@@ -279,23 +279,47 @@
                     </a>
 </div>
 <div class="lg:w-2/3 w-full relative">
-<!-- Faux Slider Visual -->
-<div class="relative w-full aspect-[4/3] bg-surface-container-lowest rounded-xl p-4 shadow-[0_32px_64px_rgba(27,28,25,0.06)] overflow-hidden group cursor-ew-resize">
-<img alt="Newly painted modern home exterior" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXebIbqGr-DgfKt29_CC3k4Fuy6k6e58CTyc6ZTuLKgUTk-_dco-eRt-LpDkwPDIGeMwK45fEbpbM5_nwypq4s6yJMnm0SyQ7EJGwYgiouUUy3t64MFZNcDbZlxCaZ6gAy4zCn44NuRyY6jP_ZELxpBB2thETcJIXROo2_IdfzQxxPjG7b56FbYeu6GjPtPABB1PueIzUgD90fU7uhX1C1vSDSo9_5-6M1T3tTgHiJppom6rUaspGjr-z6dXYfoeWnvW3FIjheA9L"/>
-<!-- Slider line visual -->
-<div class="absolute top-0 bottom-0 left-1/2 w-1 bg-surface-container-lowest shadow-md -translate-x-1/2 z-20">
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-surface-container-lowest rounded-full shadow-lg flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-lg">sync_alt</span>
+<!-- Before / After Slider -->
+<div id="ba-slider" class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_32px_64px_rgba(27,28,25,0.06)] select-none cursor-ew-resize">
+  <!-- Before (grayscale) -->
+  <img id="ba-before" alt="Home exterior before painting" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXebIbqGr-DgfKt29_CC3k4Fuy6k6e58CTyc6ZTuLKgUTk-_dco-eRt-LpDkwPDIGeMwK45fEbpbM5_nwypq4s6yJMnm0SyQ7EJGwYgiouUUy3t64MFZNcDbZlxCaZ6gAy4zCn44NuRyY6jP_ZELxpBB2thETcJIXROo2_IdfzQxxPjG7b56FbYeu6GjPtPABB1PueIzUgD90fU7uhX1C1vSDSo9_5-6M1T3tTgHiJppom6rUaspGjr-z6dXYfoeWnvW3FIjheA9L" style="filter: grayscale(100%) brightness(0.85);"/>
+  <!-- After (color, clipped to right side) -->
+  <img id="ba-after" alt="Home exterior after painting" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXebIbqGr-DgfKt29_CC3k4Fuy6k6e58CTyc6ZTuLKgUTk-_dco-eRt-LpDkwPDIGeMwK45fEbpbM5_nwypq4s6yJMnm0SyQ7EJGwYgiouUUy3t64MFZNcDbZlxCaZ6gAy4zCn44NuRyY6jP_ZELxpBB2thETcJIXROo2_IdfzQxxPjG7b56FbYeu6GjPtPABB1PueIzUgD90fU7uhX1C1vSDSo9_5-6M1T3tTgHiJppom6rUaspGjr-z6dXYfoeWnvW3FIjheA9L" style="clip-path: inset(0 50% 0 0);"/>
+  <!-- Divider line -->
+  <div id="ba-divider" class="absolute top-0 bottom-0 w-0.5 bg-white shadow-md z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-primary pointer-events-auto cursor-ew-resize">
+      <span class="material-symbols-outlined text-lg">sync_alt</span>
+    </div>
+  </div>
+  <!-- Labels -->
+  <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded font-headline font-bold text-primary text-xs shadow-sm z-10 pointer-events-none">Before</div>
+  <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded font-headline font-bold text-primary text-xs shadow-sm z-10 pointer-events-none">After</div>
 </div>
-</div>
-<!-- Labels -->
-<div class="absolute top-8 left-8 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-md font-headline font-bold text-primary text-sm shadow-sm z-20">
-                            Before
-                        </div>
-<div class="absolute top-8 right-8 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-md font-headline font-bold text-primary text-sm shadow-sm z-20">
-                            After
-                        </div>
-</div>
+<script>
+(function () {
+  const slider = document.getElementById('ba-slider');
+  const after  = document.getElementById('ba-after');
+  const divider = document.getElementById('ba-divider');
+  let dragging = false;
+
+  function setPosition(clientX) {
+    const rect = slider.getBoundingClientRect();
+    let pct = (clientX - rect.left) / rect.width;
+    pct = Math.min(Math.max(pct, 0.02), 0.98);
+    const p = (pct * 100).toFixed(2);
+    after.style.clipPath = `inset(0 ${(100 - pct * 100).toFixed(2)}% 0 0)`;
+    divider.style.left = p + '%';
+  }
+
+  slider.addEventListener('mousedown',  e => { dragging = true; setPosition(e.clientX); });
+  window.addEventListener('mousemove',  e => { if (dragging) setPosition(e.clientX); });
+  window.addEventListener('mouseup',    () => { dragging = false; });
+
+  slider.addEventListener('touchstart', e => { dragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('touchmove',  e => { if (dragging) setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('touchend',   () => { dragging = false; });
+})();
+</script>
 </div>
 </div>
 </div>
