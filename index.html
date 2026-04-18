@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lowcountry Painting Co. | Summerville, SC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#30312e",
+                      "primary": "#051125",
+                      "inverse-primary": "#bbc6e2",
+                      "tertiary-fixed-dim": "#ffb59c",
+                      "outline-variant": "#c5c6cd",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#e9e8e3",
+                      "on-secondary-container": "#5f626d",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#101b30",
+                      "on-secondary-fixed-variant": "#434751",
+                      "secondary-fixed": "#dfe2ee",
+                      "surface-tint": "#545e76",
+                      "surface": "#faf9f4",
+                      "secondary": "#5a5e69",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e3e3de",
+                      "on-secondary-fixed": "#181c24",
+                      "primary-fixed-dim": "#bbc6e2",
+                      "on-background": "#1b1c19",
+                      "surface-bright": "#faf9f4",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#3c475d",
+                      "on-surface": "#1b1c19",
+                      "primary-fixed": "#d7e2ff",
+                      "surface-container-highest": "#e3e3de",
+                      "tertiary": "#280600",
+                      "on-primary-container": "#828da7",
+                      "primary-container": "#1b263b",
+                      "surface-container-low": "#f5f4ef",
+                      "secondary-fixed-dim": "#c3c6d2",
+                      "on-error": "#ffffff",
+                      "surface-container": "#efeee9",
+                      "tertiary-fixed": "#ffdbcf",
+                      "tertiary-container": "#4b1300",
+                      "secondary-container": "#dcdfec",
+                      "on-tertiary-container": "#d27453",
+                      "on-surface-variant": "#45474d",
+                      "outline": "#75777d",
+                      "background": "#faf9f4",
+                      "on-tertiary-fixed": "#390c00",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f1ec",
+                      "on-tertiary-fixed-variant": "#793014",
+                      "surface-dim": "#dbdad5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Noto Serif", "serif"
+                      ],
+                      "body": [
+                              "Inter", "sans-serif"
+                      ],
+                      "label": [
+                              "Inter", "sans-serif"
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-tertiary-container selection:text-on-tertiary">
+<!-- TopNavBar -->
+<header class="bg-[#faf9f4] dark:bg-[#051125] text-[#051125] dark:text-[#faf9f4] font-noto-serif text-lg tracking-tight sticky top-0 z-50 w-full border-b border-surface-variant/30 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="font-noto-serif text-2xl font-bold text-[#051125] dark:text-[#faf9f4] tracking-tighter hover:opacity-80 transition-all duration-300" href="#">
+                Lowcountry Painting Co.
+            </a>
+<nav class="hidden md:flex items-center space-x-8 font-inter text-sm font-medium tracking-wide">
+<a class="text-[#4b1300] dark:text-[#ffb59c] border-b-2 border-[#4b1300] dark:border-[#ffb59c] pb-1 transition-all duration-300" href="#">Services</a>
+<a class="text-[#45474d] dark:text-[#e3e3de] hover:text-[#051125] dark:hover:text-[#ffffff] hover:opacity-80 transition-all duration-300" href="#">Gallery</a>
+<a class="text-[#45474d] dark:text-[#e3e3de] hover:text-[#051125] dark:hover:text-[#ffffff] hover:opacity-80 transition-all duration-300" href="#">About</a>
+<a class="text-[#45474d] dark:text-[#e3e3de] hover:text-[#051125] dark:hover:text-[#ffffff] hover:opacity-80 transition-all duration-300" href="#">Reviews</a>
+<a class="text-[#45474d] dark:text-[#e3e3de] hover:text-[#051125] dark:hover:text-[#ffffff] hover:opacity-80 transition-all duration-300" href="#">Service Area</a>
+<a class="text-[#45474d] dark:text-[#e3e3de] hover:text-[#051125] dark:hover:text-[#ffffff] hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center space-x-6">
+<a class="hidden lg:block font-inter text-sm font-medium text-on-surface hover:text-primary transition-colors" href="tel:8435550123">
+                    (843) 555-0123
+                </a>
+<a class="bg-tertiary-container text-on-tertiary px-6 py-3 rounded-md font-inter text-sm font-semibold tracking-wide hover:-translate-y-0.5 hover:shadow-lg hover:shadow-tertiary-container/20 transition-all duration-300 active:scale-95" href="#">
+                    Get Free Quote
+                </a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[921px] flex items-center bg-surface-container-low overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-container/80 mix-blend-multiply z-10"></div>
+<img alt="Beautiful white Charleston-style home with dark shutters and a large porch" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0-BcB_cE3Rv5MQEHXQraZTQfmuNDRmvS_f2ll7H05ZlYLVqDOqm010R_0RQTeKwQlfOfCYt42aL7KpFkZD6K3T3McdyYTUVFlB6jW2g2cU2Q-chVVswDkMMxXeg1Pa-I1ShXKN0pp1syt7V1zqyW_GHLWfzJdQ_N9QwYTMATKDtZcXZGqiyxRWvjn_D-iA0sVnHVmJ9pI4AUSSJKwmRDHeMjyUhW5P6UUucOVyZsbM38KmNwnuNbgs51bsY6hdJ1RkSVTq_hyc4HD"/>
+</div>
+<div class="relative z-20 w-full max-w-screen-2xl mx-auto px-8 md:px-16 pt-20 pb-32 flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-surface-container-lowest leading-tight tracking-tighter mb-8 drop-shadow-sm">
+                    Summerville's Most Trusted Painters — <span class="block text-surface-variant">Spotless Work, On Schedule, Guaranteed</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-surface-variant leading-relaxed mb-12 max-w-2xl font-light">
+                    Serving the greater Charleston Lowcountry with premium interior and exterior painting. Licensed, insured, and backed by a 2-year workmanship warranty.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-tertiary-container text-on-tertiary px-8 py-4 rounded-md font-inter text-base font-semibold tracking-wide text-center hover:-translate-y-0.5 hover:shadow-lg hover:shadow-tertiary-container/30 transition-all duration-300" href="#">
+                        Get My Free Quote
+                    </a>
+<a class="border border-outline-variant text-surface-container-lowest px-8 py-4 rounded-md font-inter text-base font-medium tracking-wide text-center hover:bg-surface-container-lowest/10 transition-all duration-300" href="#">
+                        See Our Work
+                    </a>
+</div>
+</div>
+<!-- Aesthetic Floating Element -->
+<div class="hidden lg:block relative w-96 h-[500px] right-0">
+<div class="absolute inset-0 bg-surface-container-lowest rounded-lg p-4 rotate-3 shadow-[0_32px_64px_rgba(27,28,25,0.06)]">
+<img alt="Painter working on a detailed interior trim" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzJpu6X8cud9eV-C1a8TCfnKiY01UpdtxxB0dZI5mITvxmY7VCmH9HIef8VKc5J58TzAhyQa-tSwaw1NpOT4kLryFEd5AWYsiawuv6xlSFfdcTgcYCigI2v7QvUkMDTHE7Z0LM00S76t2dfdg2JMbzLhRhDuEF6aOXQjNMYBrm4QWJ8Ow5e1UDYmV0p7emOmX0bP_P8nvLWgj8rbJy23lMW1bzEQfF-rjNpSuowzraL-gqIh_urTFd_hv4sr6ilZh_iUkK8NKob6l7"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest px-6 py-4 rounded-md shadow-lg flex items-center gap-4 z-30">
+<div class="bg-tertiary-fixed-dim/20 p-3 rounded-full text-tertiary-container">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">award_star</span>
+</div>
+<div>
+<p class="font-headline font-bold text-primary text-lg">Master Craftsmen</p>
+<p class="font-body text-sm text-on-surface-variant">20+ Years Experience</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-surface-container-lowest border-b border-surface-variant/30 relative z-30 -mt-10 mx-4 md:mx-16 rounded-xl shadow-[0_16px_48px_rgba(27,28,25,0.04)] overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-surface-variant/50">
+<div class="flex items-center justify-center gap-3 px-4">
+<div class="flex text-[#FFB000]">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline font-bold text-primary text-lg">5.0</span>
+<span class="font-body text-sm text-on-surface-variant hidden lg:inline">Google Rating</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 px-4 text-center">
+<span class="material-symbols-outlined text-primary/70 text-2xl">verified_user</span>
+<span class="font-body text-sm font-medium text-primary">Licensed &amp; Insured</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 px-4 text-center">
+<span class="material-symbols-outlined text-primary/70 text-2xl">location_on</span>
+<span class="font-body text-sm font-medium text-primary">Locally Owned &amp; Operated</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 px-4 text-center">
+<span class="material-symbols-outlined text-primary/70 text-2xl">history_edu</span>
+<span class="font-body text-sm font-medium text-primary">2-Year Warranty</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-16">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tight mb-6">Our Expertise</h2>
+<p class="font-body text-lg text-on-surface-variant">Precision craftsmanship for every surface of your home. We treat your property like our own, delivering flawless results that stand the test of time.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Interior Painting -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">format_paint</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Interior Painting</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">Flawless walls, crisp trim, and perfect ceilings. We protect your furniture and deliver a stunning transformation.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Exterior Painting -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">house</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Exterior Painting</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">Protect your home from the Lowcountry elements with premium exterior coatings and meticulous prep work.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Cabinet Refinishing -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">kitchen</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Cabinet Refinishing</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">A factory-smooth finish for your kitchen or bathroom cabinets at a fraction of the cost of replacement.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Deck & Fence Staining -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">deck</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Deck &amp; Fence Staining</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">Restore and protect your outdoor wood surfaces from sun and water damage with professional staining.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Pressure Washing -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Pressure Washing</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">Safe, effective cleaning for driveways, siding, and walkways to instantly boost curb appeal.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Commercial Painting -->
+<div class="group relative bg-surface-container-low p-10 rounded-xl transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_32px_64px_rgba(27,28,25,0.06)] flex flex-col h-full border border-transparent hover:border-outline-variant/15">
+<div class="mb-8 w-14 h-14 bg-surface rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">storefront</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Commercial Painting</h3>
+<p class="font-body text-on-surface-variant mb-8 flex-grow">Professional finishing for businesses, offices, and retail spaces with minimal disruption to your operations.</p>
+<a class="font-body text-sm font-semibold text-primary inline-flex items-center group/link" href="#">
+<span class="relative after:content-[''] after:absolute after:w-0 after:h-[1.5px] after:bg-tertiary-container after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:transition-all after:duration-300 group-hover/link:after:w-full">Learn More</span>
+<span class="material-symbols-outlined text-lg ml-2 transition-transform duration-300 group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Before & After Section (Editorial Layout) -->
+<section class="py-32 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-16 relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/3">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tight mb-6">The Transformation</h2>
+<p class="font-body text-lg text-on-surface-variant mb-8">Witness the dramatic difference a master's touch can make. This full exterior repaint in Summerville revitalized an aging facade into a neighborhood standout.</p>
+<a class="bg-primary text-surface-container-lowest px-8 py-4 rounded-md font-inter text-base font-semibold tracking-wide inline-block hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300" href="#">
+                        View Full Gallery
+                    </a>
+</div>
+<div class="lg:w-2/3 w-full relative">
+<!-- Faux Slider Visual -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest rounded-xl p-4 shadow-[0_32px_64px_rgba(27,28,25,0.06)] overflow-hidden group cursor-ew-resize">
+<img alt="Newly painted modern home exterior" class="w-full h-full object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXebIbqGr-DgfKt29_CC3k4Fuy6k6e58CTyc6ZTuLKgUTk-_dco-eRt-LpDkwPDIGeMwK45fEbpbM5_nwypq4s6yJMnm0SyQ7EJGwYgiouUUy3t64MFZNcDbZlxCaZ6gAy4zCn44NuRyY6jP_ZELxpBB2thETcJIXROo2_IdfzQxxPjG7b56FbYeu6GjPtPABB1PueIzUgD90fU7uhX1C1vSDSo9_5-6M1T3tTgHiJppom6rUaspGjr-z6dXYfoeWnvW3FIjheA9L"/>
+<!-- Slider line visual -->
+<div class="absolute top-0 bottom-0 left-1/2 w-1 bg-surface-container-lowest shadow-md -translate-x-1/2 z-20">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-surface-container-lowest rounded-full shadow-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">sync_alt</span>
+</div>
+</div>
+<!-- Labels -->
+<div class="absolute top-8 left-8 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-md font-headline font-bold text-primary text-sm shadow-sm z-20">
+                            Before
+                        </div>
+<div class="absolute top-8 right-8 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-md font-headline font-bold text-primary text-sm shadow-sm z-20">
+                            After
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-16">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tight mb-20 text-center">Why Lowcountry Painting Co.</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Pillar 1 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 mb-6 text-tertiary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">request_quote</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-3">Free Detailed Quotes</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">No surprises or hidden fees. We provide clear, itemized pricing before we ever open a can of paint.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 mb-6 text-tertiary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">badge</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-3">Background-Checked Crews</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Professionalism you can trust in your home. Our team is vetted, respectful, and highly trained.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 mb-6 text-tertiary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">brush</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-3">Premium Materials</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">We partner exclusively with Sherwin-Williams &amp; Benjamin Moore to ensure a lasting, beautiful finish.</p>
+</div>
+<!-- Pillar 4 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 mb-6 text-tertiary-container">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-3">Clean Job Site Guarantee</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">We respect your space. We clean up daily and leave your home looking better than we found it.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works (Process Stepper) -->
+<section class="py-32 bg-primary text-surface-container-lowest relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container mix-blend-multiply z-0"></div>
+<div class="max-w-screen-2xl mx-auto px-8 md:px-16 relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-surface-container-lowest tracking-tight mb-24 lg:w-1/2">The Editorial Process</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8">
+<!-- Step 1 -->
+<div class="relative pl-8 md:pl-12 lg:pl-0 lg:pt-16">
+<div class="absolute left-0 top-0 lg:top-auto lg:left-0 text-9xl font-headline font-black text-tertiary-fixed-dim opacity-20 -translate-x-1/2 -translate-y-4 lg:-translate-y-full z-0 select-none">1</div>
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold text-surface-container-lowest mb-4">Free On-Site Estimate</h3>
+<p class="font-body text-primary-fixed-dim leading-relaxed">We visit your property, assess the scope, listen to your vision, and provide a comprehensive, transparent proposal.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-8 md:pl-12 lg:pl-0 lg:pt-16 mt-8 lg:mt-32">
+<div class="absolute left-0 top-0 lg:top-auto lg:left-0 text-9xl font-headline font-black text-tertiary-fixed-dim opacity-20 -translate-x-1/2 -translate-y-4 lg:-translate-y-full z-0 select-none">2</div>
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold text-surface-container-lowest mb-4">We Prep &amp; Paint</h3>
+<p class="font-body text-primary-fixed-dim leading-relaxed">Meticulous preparation is our signature. We protect your surfaces, repair imperfections, and apply premium coatings with expert precision.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-8 md:pl-12 lg:pl-0 lg:pt-16 mt-8 lg:mt-16">
+<div class="absolute left-0 top-0 lg:top-auto lg:left-0 text-9xl font-headline font-black text-tertiary-fixed-dim opacity-20 -translate-x-1/2 -translate-y-4 lg:-translate-y-full z-0 select-none">3</div>
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold text-surface-container-lowest mb-4">Final Walkthrough</h3>
+<p class="font-body text-primary-fixed-dim leading-relaxed">We inspect every inch together. Only when you are completely satisfied with the flawless result do we consider the job done.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f5f4ef] text-[#051125] font-inter text-sm uppercase tracking-widest w-full border-t border-[#e3e3de]/15 transition-opacity duration-200">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-screen-2xl mx-auto gap-12 md:gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-noto-serif text-xl font-semibold text-[#051125] normal-case">Lowcountry Painting Co.</span>
+<p class="text-[#45474d] normal-case tracking-normal">© 2025 Lowcountry Painting Co. All Rights Reserved. Licensed &amp; Insured.</p>
+</div>
+<nav class="flex flex-wrap justify-center md:justify-end gap-6 text-[#45474d]">
+<a class="hover:underline decoration-[#4b1300] underline-offset-4 transition-all duration-300" href="#">Privacy Policy</a>
+<a class="hover:underline decoration-[#4b1300] underline-offset-4 transition-all duration-300" href="#">Terms of Service</a>
+<a class="hover:underline decoration-[#4b1300] underline-offset-4 transition-all duration-300" href="#">Residential Services</a>
+<a class="hover:underline decoration-[#4b1300] underline-offset-4 transition-all duration-300" href="#">Commercial Services</a>
+<a class="hover:underline decoration-[#4b1300] underline-offset-4 transition-all duration-300" href="#">Careers</a>
+</nav>
+</div>
+</footer>
+</body></html>
